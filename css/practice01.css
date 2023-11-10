@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rod{
+    width: 6px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 3px;
+    animation-name: moverod;
+    animation-iteration-count:infinite;
+    animation-duration:1s;
+}
+@keyframes moverod{
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1.75);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+}
+.rod:first-child{
+    background: #3498da;
+    animation-delay: 0s;
+}
+.rod:nth-child(2){
+    background: #c0392b;
+    animation-delay: 0.15s;
+}
+.rod:nth-child(3){
+    background: #f1c40e;
+    animation-delay: 0.3s;
+}
+.rod:nth-child(4){
+    background: #24ae60;
+    margin-right: 0;
+    animation-delay: 0.45s;
+}
